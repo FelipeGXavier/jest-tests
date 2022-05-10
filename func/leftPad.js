@@ -21,6 +21,4 @@ const leftPad = (str, size, strPad) => {
     return result
 }
 
-leftPad('ab', 2, '-')
-
 module.exports = leftPad
