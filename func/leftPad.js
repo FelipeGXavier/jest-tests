@@ -1,14 +1,11 @@
 const leftPad = (str, size, strPad) => {
+    let result = str
     if (str === null) {
         return null
-    }
-    if (str.length >= size) {
-        return str
     }
     if (strPad == null) {
         strPad = " "
     }
-    let result = str
     const pads = size - str.length
     if (pads <= 0) {
         return str
@@ -23,5 +20,7 @@ const leftPad = (str, size, strPad) => {
     }
     return result
 }
+
+leftPad('ab', 2, '-')
 
 module.exports = leftPad
